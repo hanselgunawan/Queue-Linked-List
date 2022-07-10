@@ -54,6 +54,7 @@ class QueueLinkedList {
             head = curr;
             size--;
 
+            if (isEmpty()) tail = null;
             return val;
         }
     }
@@ -103,6 +104,9 @@ class QueueLinkedList {
         System.out.print("DEQUEUE: ");
         queue.show();
         System.out.println("");
+
+        queue.enqueue(5);
+        queue.show();
 
     }
 }
